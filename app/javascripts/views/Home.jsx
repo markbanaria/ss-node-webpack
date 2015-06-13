@@ -12,7 +12,7 @@ var Home = React.createClass({
 						<h3 className="compress break-end">Key Considerations</h3>
 						<p className="compress"><strong>For the User: </strong> Encourage user to visit events and building pages and find other services they need</p>
 						<p className="compress"><strong>For the Website: </strong> Create landing pages with callouts to pages containing the categories and services</p>
-						<p className="compress"><strong>For the Data Structure:</strong> Establish heirarchy; Categories -> Services (Subcategory) -> Service Providers</p>	
+						<p className="compress"><strong>For the Data Structure:</strong> Establish heirarchy; Categories Services (Subcategory) -> Service Providers</p>	
 						<p className="compress"><strong>For the Design:</strong> Help the user distinguish between the different types of links (category, service type, service provider and article) and pages</p>					
 					</div>
 					<div className="row page-panel break-end">
