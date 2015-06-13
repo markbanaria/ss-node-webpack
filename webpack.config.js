@@ -11,7 +11,7 @@ var config = {
   entry: [
     'webpack-dev-server/client?http://localhost:3000', 
     'webpack/hot/dev-server', 
-    path.resolve(appPath, './javascripts/entry.jsx')],
+    path.resolve(appPath, 'main.js')],
   output: {
     path: buildPath,
     filename: 'bundle.js',
