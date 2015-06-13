@@ -23,7 +23,7 @@ if (!isProduction) {
 
   var bundle = require('./server/bundle.js');
   bundle();
-  console.log("this is not production");
+  console.log("prod is " + isProduction + " this is not production");
   app.all('/build/*', function (req, res) {
     proxy.web(req, res, {
         target: 'http://127.0.0.1:3001'
