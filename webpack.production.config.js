@@ -18,7 +18,7 @@ var config = {
   module: {
     loaders: [
       {test: /\.js$/, loader: 'babel', exclude: [nodeModulesPath]}, 
-      {test: /\.scss$/, loader: "style!css!sass?includePaths[]=" + bourbon },
+      {test: /\.scss$/, loader: "style-loader!css-loader!sass-loader?includePaths[]=" + bourbon },
       {test: /\.jsx$/, loader: "jsx-loader" },
       {test: /\.otf$/, loader: "url-loader?limit=8192" },
       {test: /\.png$/, loader: "url-loader?mimetype=image/png" }
