@@ -1,0 +1,23 @@
+.Categories, .HomeBuildLanding, .EventPlanLanding {
+	.ButtonGroupButton {
+		min-width: 30%;
+	}
+	.category-list {
+		&:first-child {
+			hr {
+				display: none;
+			}
+		}
+		hr {
+		}
+		h3 {
+			color: $blue-main;
+			font-weight: 600;
+		}
+		a {
+			&:hover {
+				color: $blue-main;
+			}
+		}
+	}
+}

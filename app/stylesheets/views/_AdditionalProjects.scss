@@ -1,0 +1,24 @@
+.AdditionalProjects, .HomeBuildLanding, .EventPlanLanding {
+	.ProjectCard {
+		.card-content {
+			height: 142px;
+			overflow: hidden;
+		}		
+	}
+
+	.cat-thumb {
+		margin-top: 32px;
+		width: 100%;
+		height: 256px;
+		background-size: cover;
+	}
+	.relatedServices {
+		h4 {
+			font-weight: 800;
+		}
+		.cat-thumb {
+			height: 360px;
+			background-position: 0 38%;
+		}
+	}
+}

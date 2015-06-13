@@ -1,0 +1,19 @@
+.ListColumns {	
+	a {
+		display: block;
+		font-size: 14px;
+		line-height: 24px;
+		opacity: 0.8;
+		&:hover {
+			opacity: 1;
+		}
+		font-weight: 100;
+	}
+
+	a:not(.reverse) {
+		color: $k90;
+		&.green {
+			color: darken($accent4, 15%);
+		}
+	}
+}

@@ -1,0 +1,28 @@
+.ProjectSearch {
+	input {
+		font-size: 20px;  
+		height: 72px;
+  		padding: 24px;
+		box-shadow: none;
+		outline: none;
+	}
+	i {
+		position: absolute;
+		right: 20px;
+		bottom: 46px;
+		font-size: 20px;
+		color: $k12;
+	}
+	.small {
+		input {
+			font-size: 13px;
+			height: 46px;
+			padding: 16px;
+		}
+		i {
+			right: 20px;
+			bottom: 32px;
+			font-size: 13px
+		}
+	}
+}

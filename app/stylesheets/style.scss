@@ -1,0 +1,225 @@
+//foundation and bourbon
+@import "../../node_modules/foundation/scss/foundation.scss";
+@import "../../node_modules/foundation/scss/normalize";
+@import "bourbon";
+
+//common
+@import "common/colors";
+@import "common/fonts";
+
+//mixins
+@mixin hover-lighten($color) {
+	&.hover:hover {background: lighten($color, 5%);}
+}
+
+@mixin hover-darken($color) {
+	&.hover:hover {background: darken($color, 12%);}
+}
+
+@mixin box-sizing($box) {
+  @include prefixer(box-sizing, $box, webkit moz spec);
+}
+
+@mixin overflow {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+body * {
+	font-family: "prx-nova" sans-serif;
+	list-style-type: none;
+}
+
+body {
+	min-height: 100%;
+}
+
+p, a, button, .button, label, h5 {
+	font-size: 14px;
+	line-height: 24px;
+	&.compressed {
+		line-height: 20px;
+	}
+}
+a {
+	outline: none;
+	&:focus {
+		outline: none;
+	}
+	@include transition(opacity 0.15s ease-in);	
+}
+
+h1 {
+	font-size: 45px;
+	font-weight: 600;
+	color: $blue-main;
+}
+
+h2 {
+	font-size: 34px;
+	font-weight: 600;
+	color: $k60;
+}
+
+h3 {
+	font-size: 24px;
+	font-weight: 300;
+	color: $k60;
+}
+
+h4 {
+	font-size: 20px;
+	font-weight: 300;
+	color: $k60;
+}
+
+h5 {
+	color: $k60;
+}
+
+p.reverse {
+	opacity: 0.6;
+}
+
+.section {
+	@include clearfix;
+	background: $k02;
+}
+
+.page-title {
+	margin-top: 1em;
+	padding: 0;
+}
+
+button.full, .button {
+	outline: none;
+	border: none;
+	color: white;
+	width: 100%;
+	box-shadow: none;
+}
+
+.cta {
+	font-size: 16px;
+	line-height: 32px;
+}
+
+.filter-group {
+	.MenuButton {
+		a {
+			display: block;
+			text-align: left;
+			i {
+				float: right;
+				margin-top: 2px;
+			}
+		} 
+	}	
+}
+
+.button-group {
+	li a {
+		font-size: 13px;
+		line-height: 24px;
+		padding-left: 2em;
+		padding-right: 2em;
+		height: 46px;
+	}
+}
+
+.Card {
+	.head {
+		padding-top: 16px;
+	}
+}
+
+.compress {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.break {
+	margin-top: 32px;
+	margin-bottom: 12px;
+}
+
+.break-end {
+	padding-bottom: 32px;
+}
+
+.row {
+	&.page-panel {
+		padding-top: 32px;
+	}
+}
+
+.light {
+	opacity: 0.6;
+}
+
+
+.clear-blue {
+	background: white;
+	border: 1px #cccccc solid;
+	color: $k50;
+	font-weight: 600;
+
+	&.active {
+		background: $blue-main;
+		color: white;
+	}
+}
+
+.QuickPost .card-content {
+	padding-top: 16px;
+	input {
+		padding: 8px 16px;
+		height: 46px;
+	}
+}
+
+.Banner {
+	h1 {
+		margin-bottom: 10vw;
+	}
+}
+
+.CategoryCard {
+	.Card .columns {
+		opacity: 0.75;
+		@include transition(opacity 0.2s ease-in);
+		h5 {
+			@include overflow;
+		}
+	}	
+	&:hover .Card .columns {
+		opacity: 1;
+	}
+
+}
+
+//components
+@import "navbar";
+@import "footer";
+@import "projectsearch";
+
+//views
+@import "views/projectconfirmation";
+@import "views/AdditionalProjects";
+@import "views/Categories";
+@import "views/SubCategories";
+@import "listcolumns";
+
+//color overrides
+.reverse {color: white; &:hover {color: white;}}
+.blue {background: $blue-main; @include hover-darken($blue-main);}
+.alt-blue {background: $blue-dark; @include hover-darken($blue-dark);}
+.gray {background: $k75; @include hover-darken($k75);}
+.navy {background: $accent3; @include hover-darken($accent3);}
+.violet {background: $accent1; @include hover-darken($accent1);}
+.plum {background: $accent2; @include hover-darken($accent2);}
+.moss {background: $accent4; @include hover-darken($accent4);}
+
+.gray-panel-1 {background: $k05;}
+.gray-panel-2 {background: $k10;}

@@ -1,0 +1,44 @@
+.Navbar {
+	.main, .sub {
+		a {
+			padding: 20px;
+			display: inline-block;
+			color: white;
+		}
+
+		.MenuButton {
+			display: inline-block;
+			a {
+				width: 150px;
+			}
+			.selected {
+				background: $blue-medium;
+			}
+		}
+
+		.Collapse {
+			background: $blue-medium;
+			position: absolute;
+			width: 150px;
+		}
+	}
+
+	.main {	
+		a {
+			&:hover, &.active {background: rgba(255,255,255,0.2);}
+		}	
+		background: $blue-main;
+		.logo {
+			img {height: 22px;}
+		}		
+	}
+
+	.sub {
+		background: $blue-dark;
+		a {
+			opacity: 0.8;
+			&:hover {background: rgba(0,0,0,0.4);}
+			padding: 16px;
+		}
+	}
+}

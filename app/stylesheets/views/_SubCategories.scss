@@ -1,0 +1,91 @@
+.SubCategories, .Search {
+	.title-panel {
+		h1 {
+			color: $k55;
+		}
+		h3 {
+			color: $blue-main;
+		}		
+	}
+	.cover-img {
+		margin-top: 14px;
+		height: 256px;
+		background-size: cover;
+		background-position: 50% 0;
+	}
+	.TopProvider, .ArticlePanel {
+		.row {
+			border: 1px solid $k12;
+			border-bottom: none;
+			background: rgba(255,255,255,1);
+			cursor: pointer;
+			@include transition(all 0.2s ease-in);
+				&:hover {
+					background: $k05;
+					
+				}
+			h5 {
+				color: $blue-main;
+			}
+			p {
+				color: $k50;
+			}
+			i {
+				color: $blue-dark;
+				opacity: 0.45;
+				margin: 4px 1.5px;
+			}
+			.profile-pic {
+				height: 140px;
+				background-size: cover;
+				margin-left: 24px;
+			}
+			hr {
+				border: none;
+			}
+		}
+		&:last-child {
+			.row {
+				border-bottom: 1px solid $k12;
+			}
+		}
+	}
+	.ReviewsCard {
+		.content-box {
+			background: $k02;
+			padding-top: 20px;
+			border: 1px solid $k12;
+			height: 300px;
+			p {
+				padding-right: 20px;
+			}
+
+		}
+		.review-pic {
+			margin: 12px;
+			width: 70px;
+			height: 70px;
+			background: $blue-main;
+			@include border-top-radius(50%);
+			@include border-bottom-radius(50%);
+			background-size: cover;
+		}			
+
+		&:nth-child(3) {
+			.content-box  {
+				border-right: none;
+				border-bottom: none;				
+			}
+		}	
+		&:nth-child(4) {
+			.content-box  {
+				border-bottom: none;
+			}
+		}
+		&:nth-child(5) {
+			.content-box  {
+				border-right: none;
+			}
+		}
+	}
+}
