@@ -12,6 +12,9 @@
     "type": "git",
     "url": "https://github.com/christianalfoni/webpack-express-boilerplate.git"
   },
+  "engines": {
+    "npm": "2.1.x"
+  },
   "keywords": [
     "express",
     "webpack",
@@ -45,6 +48,5 @@
     "url-loader": "^0.5.5",
     "node-bourbon": "^4.2.1-beta1",
     "node-sass": "latest"
-
   }
 }
