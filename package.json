@@ -13,7 +13,7 @@
     "url": "https://github.com/christianalfoni/webpack-express-boilerplate.git"
   },
   "engines": {
-    "npm": "2.1.x"
+    "node": "2.1.x"
   },
   "keywords": [
     "express",
