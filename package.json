@@ -32,6 +32,7 @@
     "express": "^4.12.3",
     "style-loader": "^0.10.2",
     "webpack": "latest",
+    "webpack-dev-server": "latest",
     "http-proxy": "^1.10.1",
     "webpack-dev-server": "latest",
     "flux": "^2.0.0",
