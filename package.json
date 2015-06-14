@@ -31,7 +31,6 @@
     "babel-loader": "^5.1.3",
     "express": "^4.12.3",
     "http-proxy": "^1.10.1",
-    "webpack-dev-server": "latest",
     "flux": "^2.0.0",
     "react": "latest",
     "react-router": "latest",
@@ -45,8 +44,10 @@
     "file-loader": "^0.8.1",
     "url-loader": "^0.5.5",
     "webpack": "latest",
+    "webpack-dev-server": "latest",
     "node-bourbon": "^4.2.1-beta1",
-    "node-sass": "latest"
+    "node-sass": "latest",
+    "jsx-loader": "latest"
 
   }
 }
