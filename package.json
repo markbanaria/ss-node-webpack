@@ -47,7 +47,8 @@
     "webpack-dev-server": "latest",
     "node-bourbon": "^4.2.1-beta1",
     "node-sass": "latest",
-    "jsx-loader": "latest"
+    "jsx-loader": "latest",
+    "style-loader": "latest"
 
   }
 }
