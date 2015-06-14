@@ -5,7 +5,6 @@
 
 //common
 @import "common/colors";
-@import "common/fonts";
 
 //mixins
 @mixin hover-lighten($color) {
@@ -26,8 +25,7 @@
 	overflow: hidden;
 }
 
-body * {
-	font-family: "prx-nova" sans-serif;
+body li {
 	list-style-type: none;
 }
 
