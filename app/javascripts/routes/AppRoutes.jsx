@@ -20,7 +20,6 @@ var QuoteMail = require = ('../views/QuoteMail.jsx');
 
 var routes = (
 	<Route path="/" handler={Index}>
-		<DefaultRoute handler={HomeBuildLanding}/>
 		<Route name="home" path="home" handler={Home}/>
 		<Route name="addproj" path="addproj" handler={AdditionalProjects}/>
 		<Route name="cats" path="cats" handler={Categories}/>
@@ -30,6 +29,7 @@ var routes = (
 		<Route name="homebuild" path="homebuild" handler={HomeBuildLanding}/>
 		<Route name="eventplan" path="eventplan" handler={EventPlanLanding}/>
 		<Route name="quotemail" path="quotemail" handler={QuoteMail}/>
+		<DefaultRoute handler={MyJob}/>
 	</Route>
 );
 

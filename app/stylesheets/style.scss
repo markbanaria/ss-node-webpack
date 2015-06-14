@@ -179,7 +179,7 @@ button.full, .button {
 
 .Banner {
 	h1 {
-		margin-bottom: 10vw;
+		margin-bottom: 6vw;
 	}
 }
 
@@ -195,6 +195,11 @@ button.full, .button {
 		opacity: 1;
 	}
 
+}
+
+.item-label {
+	color: $blue-main;
+	font-weight: 800;
 }
 
 //components
@@ -220,4 +225,16 @@ button.full, .button {
 .moss {background: $accent4; @include hover-darken($accent4);}
 
 .gray-panel-1 {background: $k05;}
-.gray-panel-2 {background: $k10;}
+.gray-panel-2 {background: $k08;}
+
+.ProjectCard a {
+	@extend .moss;  
+	display: block;
+	text-align: center;
+	padding: 12px;
+	float: left;
+	width: 100%;
+	color: white;
+	font-weight: 800;
+	margin-bottom: 32px;
+}

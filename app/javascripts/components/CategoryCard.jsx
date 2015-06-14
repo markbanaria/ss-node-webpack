@@ -9,7 +9,7 @@ var CategoryCard = React.createClass({
 				<div className="large-3 columns">
 					<div className="cat-thumb" style={this.props.bgurl} />
 					<Card color="blue">
-						<h5 className="reverse head">{this.props.title}</h5>
+						<h4 className="reverse head">{this.props.title}</h4>
 					</Card>
 				</div>				
 			</div>
