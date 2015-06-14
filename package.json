@@ -8,10 +8,6 @@
     "postinstall": "node heroku",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/christianalfoni/webpack-express-boilerplate.git"
-  },
   "engines": {
     "node": "2.1.x"
   },
