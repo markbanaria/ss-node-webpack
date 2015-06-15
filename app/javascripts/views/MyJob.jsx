@@ -18,8 +18,8 @@ var MyJob = React.createClass({
 		return (
 			<div className="MyJob">
 				<div className="section">
-					<div className="row break break-end">
-						<div className="large-12 columns">
+					<div className="row break-end">
+						<div className="large-12 columns break">
 							<h2 className="compress">Office Cleaning Job</h2>
 							<a>View other jobs</a>
 						</div>
