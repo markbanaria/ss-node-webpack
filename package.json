@@ -44,7 +44,7 @@
     "node-sass": "latest",
     "jsx-loader": "latest",
     "style-loader": "latest",
-    "css-loader": "latest",
+    "css-loader": "0.14.4",
     "sass-loader": "latest"
   }
 }
