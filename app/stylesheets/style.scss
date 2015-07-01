@@ -128,7 +128,17 @@ button.full, .button {
 
 .Card {
 	.head {
-		padding-top: 16px;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		margin: 0;
+	}
+	.titlebar {
+		padding: 12px 0 ;
+		margin: 0;		
+	}
+	.list-icon {
+		margin-right: 12px;
+		opacity: 0.5;
 	}
 }
 
@@ -202,16 +212,82 @@ button.full, .button {
 	font-weight: 800;
 }
 
+.filter-list {
+	margin: 0;
+	li {
+		font-size: 13px;
+		padding-bottom: 12px;
+		color: $k50;
+
+		&:hover {
+			color: $k80;
+		}
+
+		i {
+			margin-right: 12px;
+			opacity: 0.5;
+		}
+	}
+}
+
+.tabgroup {
+	display: flex;
+	margin: 0;
+	.tab {
+		padding: 16px 18px;		
+		border-bottom: solid $k12 1px;
+		font-size: 15px;
+		color: $k55;
+		font-weight: 600;
+
+		&:first-child {
+			border: solid $k12 1px;
+			border-bottom: none;
+			border-top-left-radius: 4px;			
+			border-top-right-radius: 4px;
+
+		}
+
+		&:last-child {
+			flex-grow: 1;
+		}
+	}
+}
+
+.notification {
+	font-size: 10px;
+	padding: 1.2em;
+	padding-top: 0;
+	padding-bottom: 22px;
+	height: 18px;
+	background: $blue-dark;
+	color: white;
+	font-weight: 800;
+	margin-left: 8px;
+	vertical-align: top;
+	display: inline-block;
+	border-radius: 4px;
+	margin-top: -1px;
+}
+
+.inline-alert {
+	color: red;
+	font-weight: 800;
+}
+
 //components
 @import "navbar";
 @import "footer";
 @import "projectsearch";
+@import "quotecard";
+
 
 //views
 @import "views/projectconfirmation";
 @import "views/AdditionalProjects";
 @import "views/Categories";
 @import "views/SubCategories";
+@import "views/MyJob";
 @import "listcolumns";
 
 //color overrides

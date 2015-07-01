@@ -8,7 +8,7 @@ var ProjectCard = React.createClass({
 	render: function() {
 		return (
 			<div className="ProjectCard">
-				<div className="large-6 medium-12 small-12 columns">
+				<div className={this.props.size + " medium-12 small-12 columns"}>
 					<div className="cat-thumb" style={this.props.bgurl} />
 					<Card color="blue">
 						<h4 className="reverse head">{this.props.title}</h4>

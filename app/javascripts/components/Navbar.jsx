@@ -11,6 +11,7 @@ var Navbar = React.createClass({
 				<div className="main section">
 					<div className="row">
 						<Link to="myjob">My Job</Link>
+						<Link to="addproj">Project Confirmation</Link>
 						<Link to="homebuild">Home Building</Link>
 						<Link to="eventplan">Event Planning</Link>
 					</div>

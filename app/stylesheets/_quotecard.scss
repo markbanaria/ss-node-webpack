@@ -1,0 +1,42 @@
+.QuoteCard {
+	.card-content {
+		margin-top: 16px;
+		border: 1px solid $k08;
+	}
+
+	.main-panel {
+		padding-top: 24px;
+		background: white;
+		h3 {
+			color: $k55;
+			font-weight: 700;
+		}
+		h5 {
+			color: $blue-main;
+			&.name {
+				color: $k30;
+			}
+		}
+		i {
+			margin-right: 8px;
+			color: $blue-light;
+		}
+		.cost-detail {
+			color: $k30;
+			font-weight: 300;
+			font-size: 11px;
+			margin-top: -4px;
+		}
+	}
+
+	.control-panel {
+		padding: 16px;
+		a {
+			color: $k55;
+			font-weight: 700; 
+		}
+		i {
+			margin-right: 8px;
+		}
+	}
+}
